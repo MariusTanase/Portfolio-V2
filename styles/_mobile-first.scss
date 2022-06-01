@@ -1,33 +1,38 @@
-@media screen and (min-width: $low-mobile) and(max-width: $high-mobile) {
+@media screen and (min-width: $low-mobile) {
     body {
-        font-size: $font-size-base;
+        font-size: $font-size-base * 0.9;
     }
 
-    .container {
-        max-width: 90%;
+    nav{
+        position: fixed;
+        bottom: 0;
     }
-};
 
-@media screen and (max-width: $high-tablet) {
+}
+
+@media screen and (min-width: $low-tablet) {
     body {
         font-size: $font-size-base * 1.05;
     }
-};
 
-@media screen and (min-width: $low-laptop) and (max-width: $high-laptop) {
+
+}
+
+@media screen and (min-width: $low-laptop) {
     body {
         font-size: $font-size-base * 1.1;
     }
-};
 
-@media screen and (min-width: $low-desktop) and (max-width: $high-desktop) {
+}
+
+@media screen and (min-width: $low-desktop){
     body {
         font-size: $font-size-base * 1.15;
     }
-};
+}
 
 @media screen and (min-width: $large-tv) {
     body {
         font-size: $font-size-base * 1.2;
     }
-};
+}
