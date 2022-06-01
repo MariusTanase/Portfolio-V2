@@ -2,9 +2,13 @@
     body {
         font-size: $font-size-base;
     }
+
+    .container {
+        max-width: 90%;
+    }
 };
 
-@media screen and (min-width: $low-tablet) and (max-width: $high-tablet) {
+@media screen and (max-width: $high-tablet) {
     body {
         font-size: $font-size-base * 1.05;
     }

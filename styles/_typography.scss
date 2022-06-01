@@ -1,3 +1,6 @@
+@import './_variables.scss';
+
 body{
-    color: #fff;
+    color: $primary-text;
+    font-family: 'Montserrat', sans-serif;
 }

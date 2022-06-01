@@ -1,10 +1,23 @@
+
+// Typography
+$line-height-base: 1.5;
 $font-size-base: 1.25rem;
 
-// Media Query Breakpoints
+// Colors
+$primary-bg: #202020;
+$secondary-bg: #3F3F3F;
+
+$primary-text: #ebebeb;
+$secondary-text: #707070;
+
+$active-color: #FFDF6C;
+
+
+
+// Media Query Breakpoints Variables
 $low-mobile : 320px;
 $high-mobile : 480px;
 
-$low-tablet : 481px;
 $high-tablet : 768px;
 
 $low-laptop: 769px;
