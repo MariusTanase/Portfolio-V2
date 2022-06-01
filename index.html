@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet"
+        href="./styles/style.css">
+    <!-- Font Awesome import -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <section class="background__image"></section>
 
     <header class="container">
         <h1>Marius<span class="header__title-secondary">Tanase</span></h1>
-        <nav>
-            <ul class="nav__wrapper">
+        <nav class="nav__desktop">
+            <ul >
                 <li class="nav__item"><a href="#about">About</a></li>
                 <li class="nav__item"><a href="#projects">Projects</a></li>
                 <li class="nav__item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+                <nav class="nav__mobile">
+            <ul >
+                <li class="nav__item"><a class="nav__icon" href="#about"><i class="fa-solid fa-info"></i>About</a></li>
+                <li class="nav__item"><a class="nav__icon" href="#projects"><i class="fa-solid fa-code"></i>Projects</a></li>
+                <li class="nav__item"><a class="nav__icon" href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+            </ul>
+        </nav>
     </header>
 </body>
+
 </html>
