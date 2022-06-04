@@ -8,6 +8,13 @@
         margin: 0 auto;
     }
 
+    header {
+        hr {
+            opacity: 0;
+            transform: all 0.5 ease-in-out;
+        }
+    }
+
     h1 {
         text-align: center;
 
@@ -21,7 +28,7 @@
         bottom: 0;
         width: 100%;
         background: #F1F1F1;
-        height: 5%;
+        height: 8vh;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -66,18 +73,51 @@
         display: none;
     }
 
-    main{
+    main {
         height: 85%;
         // padding-top: 10rem;
     }
 
-    #hero{
+    #hero {
         width: 80%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $primary-text;
+            margin-bottom: 0.2rem;
+            opacity: 1;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: $primary-text;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            max-width: 40ch;
+        }
+
+        button {
+            background: $button-bg;
+            color: $primary-text;
+            border: solid 1px $primary-text;
+            padding: 0.5rem 1rem;
+            max-width: 250px;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background: $primary-text;
+                color: $secondary-bg;
+            }
+        }
     }
 }
 
@@ -97,6 +137,15 @@
         align-items: center;
         justify-content: space-around;
         height: 5rem;
+        position: relative;
+
+        hr {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border: solid 1px #fff;
+        }
 
         h1 {
             width: 40%;
@@ -115,42 +164,42 @@
     }
 
     .nav__desktop {
+        display: flex;
+        flex: 1 0 auto;
+        position: relative;
+        width: auto;
+        padding: 0 2rem;
+        height: 5%;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+
+        ul {
             display: flex;
-            flex: 1 0 auto;
-            position: relative;
-            width: auto;
-            padding: 0 2rem;
-            height: 5%;
-            font-weight: bolder;
-            text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 80%;
+            list-style: none;
 
+            .nav__item {
+                padding: 0 .25rem;
+                color: $primary-text;
+                flex: 1 0 auto;
+                padding-left: 1rem;
 
-            ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-                width: 80%;
-                list-style: none;
-
-                .nav__item {
-                    padding: 0 .25rem;
+                a {
                     color: $primary-text;
-                    flex: 1 0 auto;
-                    padding-left: 1rem;
+                    text-decoration: none;
+                    transition: all 0.5s ease-in-out;
 
-                    a {
-                        color: $primary-text;
-                        text-decoration: none;
-                        transition: all 0.5s ease-in-out;
-
-                        &:hover {
-                            color: $active-color;
-                        }
+                    &:hover {
+                        color: $active-color;
                     }
                 }
             }
         }
+    }
 
 }
 
