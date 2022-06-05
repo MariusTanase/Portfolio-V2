@@ -190,7 +190,7 @@ body {
     color: #fefefe;
     margin-bottom: 0.2rem;
     opacity: 1;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
   }
   .social__icons .wrapper {
     display: -webkit-box;
@@ -206,12 +206,47 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
   }
   .social__icons .wrapper .social__icon {
     height: auto;
     width: 50px;
     font-size: 3rem;
+  }
+  .social__icons .social__icon--email {
+    font-size: 1.5rem;
+  }
+  #about {
+    width: 100%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #202020;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  #about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #202020;
+    margin-bottom: 0.5rem;
+    opacity: 1;
+  }
+  #about p {
+    font-size: 1.25rem;
+    color: #202020;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    max-width: 40ch;
   }
 }
 
@@ -323,6 +358,9 @@ body {
     font-size: 1.6rem;
     color: #fefefe;
     margin-bottom: 0.2rem;
+  }
+  #hero .social__icons .social__icon--email {
+    font-size: 2rem;
   }
   #hero article {
     -webkit-box-flex: 1;

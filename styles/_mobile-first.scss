@@ -142,7 +142,7 @@
             color: $primary-text;
             margin-bottom: 0.2rem;
             opacity: 1;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
 
         .wrapper {
@@ -151,13 +151,43 @@
             justify-content: space-around;
             align-items: center;
             gap: 1rem;
-            margin-top: 1rem;
-
+            margin-top: 0;
+            padding-bottom: 1rem;
             .social__icon {
                 height: auto;
                 width: 50px;
                 font-size: 3rem;
             }
+        }
+        .social__icon--email{
+                font-size: 1.5rem;
+            }
+    }
+
+
+    #about{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-bg;
+
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        h2{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $primary-bg;
+            margin-bottom: 0.5rem;
+            opacity: 1;
+        }
+        p{
+            font-size: 1.25rem;
+            color: $primary-bg;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            max-width: 40ch;
         }
     }
 }
@@ -259,6 +289,9 @@
                 font-size: 1.6rem;
                 color: $primary-text;
                 margin-bottom: 0.2rem;
+            }
+            .social__icon--email{
+                font-size: 2rem;
             }
         }
 
