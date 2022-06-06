@@ -1,22 +1,16 @@
+:root {
+    $hue: 45;
+    $sat: 98%;
+    $first-color: hsl(var(--hue), var(--sat), 50%);
+    $text-color: hsl(var(--hue), 4%, 35%);
+    $body-color: hsl(var(--hue), 0%, 100%);
 
-// Typography
-$line-height-base: 1.5;
-$font-size-base: 1.25rem;
-
-// Colors
-$primary-bg: #202020;
-$secondary-bg: #3F3F3F;
-
-$primary-text: #fefefe;
-$secondary-text: #707070;
-
-$active-color: #FFDF6C;
-
-$button-bg: transparent;
-
-// Media Query Breakpoints Variables
-$low-mobile : 320px;
-$low-tablet: 481px;
-$low-laptop: 769px;
-$low-desktop: 1025px;
-$large-tv: 1201px;
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 3rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
