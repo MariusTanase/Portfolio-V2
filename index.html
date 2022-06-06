@@ -23,38 +23,34 @@
 
     <header class="container">
         <h1><a href="#">Marius<span class="header__title-secondary">Tanase</span></a></h1>
-        <nav class="nav__desktop">
-            <ul>
-                <li class="nav__item"><a href="#about">About</a></li>
+        <nav class="nav__menu">
+            <ul class="nav__list">
                 <li class="nav__item"><a href="#projects">Projects</a></li>
                 <li class="nav__item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="nav__mobile">
-            <ul>
-                <li class="nav__item"><a class="nav__icon"
-                        href="#about"><i class="fa-solid fa-info"></i>About</a></li>
-                <li class="nav__item"><a class="nav__icon"
-                        href="#projects"><i class="fa-solid fa-code"></i>Projects</a></li>
-                <li class="nav__item"><a class="nav__icon"
-                        href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
             </ul>
         </nav>
         <hr>
     </header>
 
     <main>
-        <section id="hero"
-            class="container">
-            <article>
-                <h2>Hi. I'm Marius.</h2>
-                <p>
+
+        <!-- Hero landing page, sketch -->
+        <section class="hero container">
+            <section class="hero__left">
+                <h1 class="hero__title">Hi, I'm Marius.</h1>
+                <p class="hero__description">
                     Self-taught web developer with a passion for creating beautiful and functional websites.
                 </p>
-                <button>Projects <i class="fa-solid fa-greater-than"></i></button>
-            </article>
+                <button class="button button__projects">Projects <i class="fa-solid fa-code"></i></button>
+                <button class="button button__contact">Get in touch <i class="fa-solid fa-paper-plane"></i></button>
+            </section>
+        </section>
 
-            <article>
+
+
+        <!-- Contact me -->
+        <section id="contact">
+            <article class="container">
                 <section class="social__icons">
                     <h3>Places to contact me</h3>
                     <section class="wrapper">
@@ -72,52 +68,6 @@
                         target="_blank"
                         rel="noopener noreferrer">Email me <i class="fa-solid fa-envelope"></i></a>
                 </section>
-            </article>
-        </section>
-
-        <section id="about"
-            class="container">
-            <article>
-                <h2>About me</h2>
-                <p>
-                    Hello! My name is Marius and I enjoy creating things that live on the internet. My interest in web
-                    development started back in 2018 when I decided to try my brand website — turns out that my
-                    university project taught me alot about about HTML & CSS!
-                </p>
-                <p>
-                    Fast-forward to today, I have been working as a web developer for a few years now. I have been
-                    working with HTML, CSS, SCSS, JavaScript, PHP, MySQL, and a bit of WordPress. I have also worked
-                    with
-                    React, Node.js, Express and a bit of Laravel.
-
-                </p>
-                <p>
-                    I am currently looking for a position as a junior web developer. If you have any questions, feel
-                    free to contact me.
-                </p>
-
-                <details>
-                    <summary>
-                        Here are few technologies I've been working with.
-                    </summary>
-                    <section class="grid__skills">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SCSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                    </ul>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>WordPress</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Laravel</li>
-                    </ul>
-                    </section>
-                </details>
             </article>
         </section>
     </main>
