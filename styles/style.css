@@ -49,19 +49,22 @@ h1, h2, h3 {
 }
 
 .container {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+main {
+  width: 100%;
+}
+
 .header {
   width: 100%;
-  height: 5rem;
-  z-index: 100;
+  height: 10vh;
 }
 
 .header__wrapper {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +82,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.header__logo-text {
+.header .header__logo-text {
   font-size: 2.5rem;
   font-weight: bold;
   width: auto;
@@ -90,15 +93,12 @@ h1, h2, h3 {
 }
 
 .nav__menu {
-  width: auto;
   height: 100%;
   margin-left: 2rem;
   color: white;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: .2rem;
-  padding: 1rem;
-  border-radius: .5rem;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -116,10 +116,7 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav__menu .nav__list .nav__item {
-  margin: 0 1rem;
+  gap: 2rem;
 }
 
 .nav__menu a:hover {
@@ -128,10 +125,177 @@ h1, h2, h3 {
   transition: all .6s ease-in-out;
 }
 
+.nav__menu .nav__burger {
+  display: none;
+}
+
 hr {
   width: 80%;
-  height: .1rem;
-  background-color: white;
+  height: .2rem;
+  background: #fcbe03;
   margin: 0 auto;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+  .header__logo-text {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav__menu {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .header__logo-text {
+    font-size: 1.75rem;
+  }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  height: 90vh;
+  gap: 6rem;
+}
+
+.hero .hero__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.hero .hero__left .hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero .hero__left .hero__description {
+  font-size: 1.5rem;
+  color: white;
+  max-width: 35ch;
+}
+
+.hero .hero__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  width: 40%;
+}
+
+.hero .hero__right img {
+  width: 350px;
+  min-width: 200px;
+  border: solid #fcbe03 9px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px 6px black;
+          box-shadow: 0px 0px 15px 6px black;
+}
+
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.hero__buttons .button {
+  background-color: #fcbe03;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__buttons .button:hover {
+  background-color: white;
+  color: #fcbe03;
+}
+
+.hero__buttons .button__contact {
+  background-color: transparent;
+  color: #fcbe03;
+  border: solid #fcbe03 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__buttons .button__contact:hover {
+  background-color: #fcbe03;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .hero__left .hero__title {
+    font-size: 3rem;
+  }
+  .hero .hero__left .hero__description {
+    font-size: 1.25rem;
+  }
+  .hero .hero__right {
+    display: none;
+  }
+  .hero__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

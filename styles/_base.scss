@@ -33,7 +33,11 @@ h1,h2,h3{
 }
 
 .container {
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+main{
+    width: 100%;
 }
