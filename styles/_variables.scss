@@ -1,16 +1,14 @@
-:root {
-    $hue: 45;
-    $sat: 98%;
-    $first-color: hsl(var(--hue), var(--sat), 50%);
-    $text-color: hsl(var(--hue), 4%, 35%);
-    $body-color: hsl(var(--hue), 0%, 100%);
+$hue: 45;
+$sat: 98%;
+$first-color: hsl($hue, $sat, 50%);
+$title-color: hsl($hue, 4%, 15%);
+$text-color: hsl($hue, $sat, 100%);
+$span-color: hsl($hue, $sat, 75%);
+$body-color: hsl($hue, 0%, 10%);
 
-    @media screen and (min-width: 968px){
-        --biggest-font-size: 3rem;
-        --h2-font-size: 1.75rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
-}
+$biggest-font-size: 2.5rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$normal-font-size: 1.25rem;
+$small-font-size: 1rem;
+$smaller-font-size: .813rem;

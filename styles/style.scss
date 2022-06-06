@@ -1,6 +1,7 @@
-@import
-'./resets',
-'./_background',
-'./_variables',
-'./_imports',
-"./_animations";
+@import './_variables';
+@import './_background';
+@import './_base';
+
+@import "./components/_animations";
+@import "./components/_header";
+@import "./components/_hero";
