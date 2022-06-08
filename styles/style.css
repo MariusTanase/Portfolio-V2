@@ -347,7 +347,6 @@ hr {
           justify-content: space-between;
   text-align: center;
   color: white;
-  border: 1px solid #0356fc;
   border-radius: .25rem;
   padding: 1rem;
   -webkit-transition: all .2s ease-in-out;
@@ -439,7 +438,7 @@ hr {
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 351px) {
   .container {
     min-width: 90%;
   }
