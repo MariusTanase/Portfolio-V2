@@ -1,7 +1,8 @@
-$hue: 45;
+$hue: 220;
 $sat: 98%;
+
 $first-color: hsl($hue, $sat, 50%);
-$title-color: hsl($hue, 4%, 15%);
+$title-color: hsl($hue, $sat - 20%, 50%);
 $text-color: hsl($hue, $sat, 100%);
 $span-color: hsl($hue, $sat, 75%);
 $body-color: hsl($hue, 0%, 10%);

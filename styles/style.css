@@ -27,6 +27,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 1.25rem;
+  background-color: #050320;
 }
 
 ul {
@@ -44,7 +45,7 @@ img {
 
 h1, h2, h3 {
   font-weight: 500;
-  color: #282725;
+  color: #1c5ee3;
   line-height: 1.5;
 }
 
@@ -120,7 +121,7 @@ main {
 }
 
 .nav__menu a:hover {
-  color: #fcbe03;
+  color: #0356fc;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
@@ -132,7 +133,7 @@ main {
 hr {
   width: 80%;
   height: .2rem;
-  background: #fcbe03;
+  background: #0356fc;
   margin: 0 auto;
   border: none;
 }
@@ -225,7 +226,7 @@ hr {
 .hero .hero__right img {
   width: 350px;
   min-width: 200px;
-  border: solid #fcbe03 9px;
+  border: solid #0356fc 9px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 15px 6px black;
           box-shadow: 0px 0px 15px 6px black;
@@ -240,7 +241,7 @@ hr {
 }
 
 .hero__buttons .button {
-  background-color: #fcbe03;
+  background-color: #0356fc;
   color: white;
   border: none;
   border-radius: 5px;
@@ -254,13 +255,13 @@ hr {
 
 .hero__buttons .button:hover {
   background-color: white;
-  color: #fcbe03;
+  color: #0356fc;
 }
 
 .hero__buttons .button__contact {
   background-color: transparent;
-  color: #fcbe03;
-  border: solid #fcbe03 1px;
+  color: #0356fc;
+  border: solid #0356fc 1px;
   border-radius: 5px;
   padding: 1rem;
   font-size: 1.25rem;
@@ -271,7 +272,7 @@ hr {
 }
 
 .hero__buttons .button__contact:hover {
-  background-color: #fcbe03;
+  background-color: #0356fc;
   color: white;
 }
 
@@ -296,6 +297,151 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #hero_title {
+    font-size: 2rem;
+  }
+  body > main > section.hero.container > section.hero__left > p {
+    font-size: 1rem;
+  }
+}
+
+.projects {
+  color: #0356fc;
+}
+
+.projects__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1c5ee3;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.projects__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.projects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  color: white;
+  border: 1px solid #0356fc;
+  border-radius: .25rem;
+  padding: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.projects__image:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.projects__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .5rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.projects__item-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.projects__description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.projects__link {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #0356fc;
+}
+
+.projects__info {
+  font-size: 0.813rem;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects .button {
+  color: white;
+  border: #0356fc solid 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  min-width: 150px;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+.projects .button:hover {
+  background-color: #0356fc;
+  color: white;
+  border: #0356fc solid 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    min-width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
