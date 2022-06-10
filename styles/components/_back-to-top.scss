@@ -1,0 +1,57 @@
+// Back to top button
+
+.back-to-top{
+
+    position: fixed;
+
+    bottom: 1rem;
+    right: 1rem;
+
+    height: 3rem;
+    width: 3rem;
+
+    border-radius: 1rem;
+
+    background-color: $text-color;
+
+    color: $first-color;
+
+    cursor: pointer;
+
+    transition: all 0.6s ease;
+
+    opacity: 0;
+
+    &:hover{
+        background-color: $first-color;
+        color: $text-color;
+    }
+}
+
+.show{
+    animation: fadeInButton 1s ease-in-out forwards;
+}
+
+//button will dissapear after clicking
+.hide{
+    animation: fadeOutButton 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeInButton{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutButton{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

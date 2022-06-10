@@ -8,6 +8,8 @@
     &__wrapper {
         width: 80%;
 
+        position: relative;
+
         margin: 0 auto;
 
         display: flex;
@@ -79,12 +81,8 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    .nav__menu {
-        display: none;
-    }
-
-    .nav__burger {
-        display: block;
+    .header {
+        height: auto;
     }
 
     .header__logo-text {
@@ -93,13 +91,6 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-    .nav__menu {
-        display: none;
-    }
-
-    .nav__burger {
-        display: block;
-    }
 
     .header {
         width: 100%;

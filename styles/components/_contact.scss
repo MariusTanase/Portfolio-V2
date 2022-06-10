@@ -33,7 +33,25 @@
             gap: 2rem;
 
             a {
-                color: $text-color
+                width: 55%;
+                text-align: center;
+
+                color: $text-color;
+                border: $first-color solid 1px;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                transition: all .2s ease-in-out;
+                min-width: 150px;
+                margin-right: 1rem;
+                margin-bottom: .5rem;
+                font-size: 1.2rem;
+                background-color: transparent;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $first-color;
+                    color: #fff;
+                }
             }
 
             .contact__text {
@@ -127,32 +145,33 @@
 
 
             }
-                #statusContainer {
-                    display: none;
-                    position: absolute;
-                    top: 0;
-                    width: 102%;
-                    background: rgb(87, 194, 87);
-                    height: 102%;
-                    opacity: 1;
 
-                    border-radius: 1rem;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
+            #statusContainer {
+                display: none;
+                position: absolute;
+                top: 0;
+                width: 102%;
+                background: rgb(87, 194, 87);
+                height: 102%;
+                opacity: 1;
 
-                    flex-wrap: wrap;
+                border-radius: 1rem;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                flex-wrap: wrap;
 
 
-                    #status{
-                        width: 90%;
-                        color: $first-color;
-                        font-size: 2rem;
-                        font-weight: bolder;
-                        text-align: center;
-                        animation: fading 20s forwards;
-                    }
+                #status {
+                    width: 90%;
+                    color: $first-color;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    text-align: center;
+                    animation: fading 20s forwards;
                 }
+            }
         }
     }
 
@@ -184,8 +203,19 @@
 }
 
 @keyframes fading {
-    0% { opacity: 0; }
-    10%{ opacity: 1; }
-    90%{ opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
