@@ -45,7 +45,7 @@ img {
 
 h1, h2, h3 {
   font-weight: 500;
-  color: #1c5ee3;
+  color: #1c1ce3;
   line-height: 1.5;
 }
 
@@ -61,8 +61,8 @@ main {
 
 .bg-dark {
   background-color: #1a1a1a;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .header {
@@ -132,7 +132,7 @@ main {
 }
 
 .nav__menu a:hover {
-  color: #0356fc;
+  color: #0303fc;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
@@ -144,7 +144,7 @@ main {
 hr {
   width: 80%;
   height: .2rem;
-  background: #0356fc;
+  background: #0303fc;
   margin: 0 auto;
   border: none;
   -webkit-transition: all 0.5s ease-in-out;
@@ -153,9 +153,10 @@ hr {
 
 @media screen and (max-width: 768px) {
   .header {
-    height: auto;
+    height: 3.4rem;
   }
-  .header__logo-text {
+  .header .header__logo-text {
+    font-size: 1.75rem;
     margin: 0 auto;
   }
 }
@@ -163,9 +164,6 @@ hr {
 @media screen and (max-width: 500px) {
   .header {
     width: 100%;
-  }
-  .header .header__logo-text {
-    font-size: 1.75rem;
   }
 }
 
@@ -230,7 +228,7 @@ hr {
 .hero .hero__right img {
   width: 350px;
   min-width: 200px;
-  border: solid #0356fc 9px;
+  border: solid #0303fc 9px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 15px 6px black;
           box-shadow: 0px 0px 15px 6px black;
@@ -245,7 +243,7 @@ hr {
 }
 
 .hero__buttons .button {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: white;
   border: none;
   border-radius: 5px;
@@ -259,13 +257,13 @@ hr {
 
 .hero__buttons .button:hover {
   background-color: white;
-  color: #0356fc;
+  color: #0303fc;
 }
 
 .hero__buttons .button__contact {
   background-color: transparent;
-  color: #0356fc;
-  border: solid #0356fc 1px;
+  color: #0303fc;
+  border: solid #0303fc 1px;
   border-radius: 5px;
   padding: 1rem;
   font-size: 1.25rem;
@@ -276,7 +274,7 @@ hr {
 }
 
 .hero__buttons .button__contact:hover {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: white;
 }
 
@@ -314,7 +312,7 @@ hr {
 }
 
 .projects {
-  color: #0356fc;
+  color: #0303fc;
   height: auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -323,7 +321,7 @@ hr {
 .projects__title {
   font-size: 2.5rem;
   font-weight: 500;
-  color: #1c5ee3;
+  color: #1c1ce3;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -394,7 +392,7 @@ hr {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  color: #0356fc;
+  color: #0303fc;
 }
 
 .projects__info {
@@ -427,7 +425,7 @@ hr {
 
 .projects .button {
   color: white;
-  border: #0356fc solid 1px;
+  border: #0303fc solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   -webkit-transition: all .2s ease-in-out;
@@ -438,9 +436,9 @@ hr {
 }
 
 .projects .button:hover {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: white;
-  border: #0356fc solid 1px;
+  border: #0303fc solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
@@ -502,7 +500,7 @@ hr {
   width: 55%;
   text-align: center;
   color: white;
-  border: #0356fc solid 1px;
+  border: #0303fc solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   -webkit-transition: all .2s ease-in-out;
@@ -516,7 +514,7 @@ hr {
 }
 
 .contact .contact__wrapper .contact__left a:hover {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: #fff;
 }
 
@@ -584,13 +582,13 @@ hr {
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 1.5rem;
-  color: #0356fc;
+  color: #0303fc;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .contact .contact__wrapper .contact__right form input:focus {
-  outline: #0356fc solid 0.2rem;
+  outline: #0303fc solid 0.2rem;
   border: none;
 }
 
@@ -601,19 +599,19 @@ hr {
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 1.5rem;
-  color: #0356fc;
+  color: #0303fc;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .contact .contact__wrapper .contact__right form textarea:focus {
-  outline: #0356fc solid 0.2rem;
+  outline: #0303fc solid 0.2rem;
   border: none;
 }
 
 .contact .contact__wrapper .contact__right form button {
   color: white;
-  border: #0356fc solid 1px;
+  border: #0303fc solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   -webkit-transition: all .2s ease-in-out;
@@ -627,9 +625,9 @@ hr {
 }
 
 .contact .contact__wrapper .contact__right form button:hover {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: white;
-  border: #0356fc solid 1px;
+  border: #0303fc solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
@@ -659,7 +657,7 @@ hr {
 
 .contact .contact__wrapper .contact__right #statusContainer #status {
   width: 90%;
-  color: #0356fc;
+  color: #0303fc;
   font-size: 2rem;
   font-weight: bolder;
   text-align: center;
@@ -768,8 +766,8 @@ hr {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 3rem;
-  height: 1.5rem;
+  width: 4rem;
+  height: 25px;
   width: 50px;
   cursor: pointer;
 }
@@ -813,7 +811,7 @@ hr {
     left: -150%;
     width: 120%;
     height: 100%;
-    background-color: #0356fc;
+    background-color: #0303fc;
     opacity: 1;
     cursor: auto;
     -webkit-transition: all 1s ease-in-out;
@@ -848,7 +846,7 @@ hr {
     padding: 2rem 4rem;
   }
   .nav__menu .nav__list a:hover {
-    color: #0356fc;
+    color: #0303fc;
     -webkit-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
     background: white;
@@ -867,7 +865,7 @@ hr {
   width: 3rem;
   border-radius: 1rem;
   background-color: white;
-  color: #0356fc;
+  color: #0303fc;
   cursor: pointer;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -875,7 +873,7 @@ hr {
 }
 
 .back-to-top:hover {
-  background-color: #0356fc;
+  background-color: #0303fc;
   color: white;
 }
 

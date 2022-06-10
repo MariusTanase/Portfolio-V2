@@ -7,9 +7,66 @@
         content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MariusTanase.com</title>
     <link rel="stylesheet"
         href="./styles/style.css">
+    <!-- lazy load the css -->
+    <meta name="google-site-verification"
+        content="1Tjj-EgyV2DitM8P6O3H4SXL9apzItwF28yzxhOB5Ns" />
+
+    <meta name="title"
+        content="Marius Tanase">
+    <meta name="description"
+        content="Front end developer portfolio.">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Portfolio, Marius Tanase">
+    <meta name="author"
+        content="Marius Tanase">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type"
+        content="website">
+    <meta property="og:url"
+        content="https://mariustanase.com/">
+    <meta property="og:title"
+        content="Marius Tanase Portfolio">
+    <meta property="og:description"
+        content="Front end developer portfolio.">
+    <meta property="og:image"
+        content="./assets/images/bg.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card"
+        content="summary_large_image">
+    <meta property="twitter:url"
+        content="https://mariustanase.com/">
+    <meta property="twitter:title"
+        content="Marius Tanase Portfolio">
+    <meta property="twitter:description"
+        content="Front end developer portfolio.">
+    <meta property="twitter:image"
+        content="./assets/images/bg.webp">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/images/fav/apple-touch-icon.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/images/fav//favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/images/fav/favicon-16x16.png">
+    <link rel="manifest"
+        href="./assets/images/fav/site.webmanifest">
+
+    <meta name="msapplication-TileColor"
+        content="#da532c">
+    <meta name="theme-color"
+        content="#000">
+
     <!-- Font Awesome import -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -51,14 +108,16 @@
                     Self-taught web developer with a passion for creating beautiful and functional websites.
                 </p>
                 <section class="hero__buttons">
-                    <button class="button button__projects">Projects <i class="fa-solid fa-code"></i></button>
-                    <button class="button__contact">Get in touch <i class="fa-solid fa-paper-plane"></i></button>
+                    <button class="button button__projects"
+                        aria-label="Jump to projects button">Projects <i class="fa-solid fa-code"></i></button>
+                    <button class="button__contact"
+                        aria-label="Get in touch with me">Get in touch <i class="fa-solid fa-paper-plane"></i></button>
                 </section>
             </section>
             <section class="hero__right">
                 <img src="./images/assets/profile-pic.png"
                     alt="hero image"
-                    class="hero__image">
+                    class="hero__image"></img>
             </section>
 
         </section>
@@ -71,7 +130,9 @@
                     <section>
                         <img src="./images/assets/Project.png"
                             alt="project-1"
-                            class="projects__image">
+                            class="projects__image"
+                            width="100%"
+                            height="auto"></img>
                         <h3 class="projects__item-title">Project 1</h3>
                     </section>
                     <div class="projects__info">
@@ -86,12 +147,14 @@
                     <!-- //github code a link and live button-->
                     <section class="projects__links">
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit github for code">
                             <i class="fa-solid fa-code"></i>
                             Github
                         </a>
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit project">
                             <i class="fa-solid fa-external-link-alt"></i>
                             Visit
                         </a>
@@ -101,7 +164,9 @@
                     <section>
                         <img src="./images/assets/Project.png"
                             alt="project-2"
-                            class="projects__image">
+                            class="projects__image"
+                            width="100%"
+                            height="auto"></img>
                         <h3 class="projects__item-title">Project 2</h3>
                     </section>
                     <div class="projects__info">
@@ -115,12 +180,14 @@
                     </div>
                     <section class="projects__links">
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit github for code">
                             <i class="fa-solid fa-code"></i>
                             Github
                         </a>
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit project">
                             <i class="fa-solid fa-external-link-alt"></i>
                             Visit
                         </a>
@@ -130,7 +197,9 @@
                     <section>
                         <img src="./images/assets/Project.png"
                             alt="project-3"
-                            class="projects__image">
+                            class="projects__image"
+                            width="100%"
+                            height="auto"></img>
                         <h3 class="projects__item-title">Project 3</h3>
                     </section>
                     <div class="projects__info">
@@ -144,12 +213,14 @@
                     </div>
                     <section class="projects__links">
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit github for code">
                             <i class="fa-solid fa-code"></i>
                             Github
                         </a>
                         <a href="#"
-                            class="button projects__link">
+                            class="button projects__link"
+                            aria-label="Visit project">
                             <i class="fa-solid fa-external-link-alt"></i>
                             Visit
                         </a>
@@ -196,6 +267,7 @@
                     <a class="button button__contact"
                         href="mailto:marius_tanase@outlook.com"
                         target="_blank"
+                        aria-label="Fast Email to developer"
                         rel="noopener noreferrer">Email me <i class="fa-solid fa-envelope"></i></a>
 
 
@@ -210,6 +282,7 @@
                             <input type="text"
                                 id="name"
                                 name="name"
+                                aria-label="Full name input"
                                 class="form__input"
                                 placeholder="First and Last"
                                 required>
@@ -220,6 +293,7 @@
                             <input type="email"
                                 id="email"
                                 name="email"
+                                aria-label="Email address input"
                                 class="form__input"
                                 placeholder="email@domain.com"
                                 required>
@@ -233,11 +307,14 @@
                                 cols="30"
                                 rows="10"
                                 class="form__input"
+                                aria-label="Text Area for message"
                                 placeholder="Your mesage here..."
                                 required></textarea>
                         </section>
                         <button class="button"
-                            type="submit">Send your message <i class="fa-solid fa-paper-plane"></i></button>
+                            type="submit"
+                            aria-label="Submit button for Form">Send your message <i
+                                class="fa-solid fa-paper-plane"></i></button>
                     </form>
                     <div id="statusContainer">
                         <h2 id="status">Email Sent!</h2>
@@ -258,22 +335,26 @@
                 <section class="footer__icons">
                     <a href="https://linkedin.com/in/marius-tanase"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIN Profile">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/MariusTanase"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        aria-label="Github profile">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="https://twitter.com/Marius1n"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        aria-label="Twitter profile">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                     <a href="https://www.facebook.com/tanaseMariux/"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        aria-label="Facebook profile">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                 </section>
@@ -281,7 +362,8 @@
         </section>
 
         <!-- Back to top button -->
-        <button class="button back-to-top"
+        <button aria-label="Scroll back to top button"
+            class="button back-to-top"
             id="top-button">
             <i class="fa-solid fa-arrow-up"></i>
         </button>

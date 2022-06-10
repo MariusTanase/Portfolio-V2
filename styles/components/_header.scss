@@ -82,11 +82,14 @@ hr {
 
 @media screen and (max-width: 768px) {
     .header {
-        height: auto;
+        height: 3.4rem;
     }
 
-    .header__logo-text {
-        margin: 0 auto;
+    .header {
+        .header__logo-text {
+            font-size: 1.75rem;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -94,11 +97,5 @@ hr {
 
     .header {
         width: 100%;
-    }
-
-    .header {
-        .header__logo-text {
-            font-size: 1.75rem;
-        }
     }
 }

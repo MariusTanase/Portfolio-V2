@@ -1,6 +1,6 @@
 // selecting navbar
-const header = document.querySelector('header');
-const hr = document.querySelector('hr');
+const headerBar = document.querySelector('.header');
+const hrElement = document.querySelector('hr');
 
 // Burger menu
 let menuBar = document.querySelector(".burger__menu");
@@ -11,17 +11,6 @@ const navbarMenu = document.querySelector('.nav__menu');
 
 //Back to top button
 const backToTop = document.querySelector('.back-to-top');
-
-//if header position is bigger than 0 then add background color to header
-window.onscroll = function () {
-    if (window.pageYOffset > 0) {
-        header.classList.add('bg-dark');
-        hr.style.width = '100%';
-    } else {
-        header.classList.remove('bg-dark');
-        hr.style.width = '80%';
-    }
-}
 
 menuBar.addEventListener("click", () => {
     menuBar.classList.toggle(".active");
@@ -71,12 +60,25 @@ navbarLinks.forEach(link => {
 
 
 // Back to top function for button when scrolling to appear and when pressed to dissapear
+
+// When the user scrolls down 20px from the top of the document, header add class bg-dark
+
+
 window.onscroll = function () {
-    if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 1) {
+        //Adding background to header after scroll
+        headerBar.classList.add('bg-dark');
+        hrElement.style.width = '100%';
+
+        //Show back to top button
         backToTop.classList.add('show');
         backToTop.classList.remove('hide');
 
     } else {
+        //Remove background from header
+        headerBar.classList.remove('bg-dark');
+        hrElement.style.width = '80%';
+
         // after button is pressed and the page is scrolled back to the top the button will be hidden with animation
         backToTop.classList.remove('show');
         backToTop.classList.add('hide');

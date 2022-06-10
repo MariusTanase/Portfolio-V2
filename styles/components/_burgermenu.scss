@@ -7,9 +7,9 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 3rem;
+    width: 4rem;
 
-    height: 1.5rem;
+    height: 25px;
     width: 50px;
     cursor: pointer;
 
@@ -50,6 +50,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .burger__menu {
         display: block;
     }
@@ -99,4 +100,5 @@
     hr {
         display: none;
     }
+
 }
