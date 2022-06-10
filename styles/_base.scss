@@ -42,3 +42,7 @@ h1,h2,h3{
 main{
     width: 100%;
 }
+.bg-dark{
+    background-color: $body-color;
+    transition: all .6s ease-in-out;
+}
