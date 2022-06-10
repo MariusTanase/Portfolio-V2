@@ -4,7 +4,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    
+
     &__wrapper {
         width: 80%;
 
@@ -68,11 +68,14 @@
 }
 
 hr {
+
     width: 80%;
     height: .2rem;
     background: $first-color;
     margin: 0 auto;
     border: none;
+
+    transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
