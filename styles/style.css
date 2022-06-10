@@ -311,8 +311,9 @@ hr {
 
 .projects {
   color: #0356fc;
-  height: 80vh;
+  height: auto;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .projects__title {
@@ -446,10 +447,261 @@ hr {
   }
 }
 
-#contact {
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  height: 60vh;
+.contact {
+  padding: 3rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.contact .contact__title {
+  font-weight: 2.5rem;
+}
+
+.contact .contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact__wrapper .contact__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 40%;
+  border-radius: 0.5rem;
+  gap: 2rem;
+}
+
+.contact .contact__wrapper .contact__left a {
+  color: white;
+}
+
+.contact .contact__wrapper .contact__left .contact__text {
+  font-size: 1.2rem;
+  font-weight: 1.5rem;
+  color: white;
+}
+
+.contact .contact__wrapper .contact__left .contact__description {
+  max-width: 40ch;
+}
+
+.contact .contact__wrapper .contact__right {
+  position: relative;
+  width: 40%;
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact__wrapper .contact__right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .contact__wrapper .contact__right form .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.contact .contact__wrapper .contact__right form input {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 1.5rem;
+  color: #0356fc;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .contact__wrapper .contact__right form input:focus {
+  outline: #0356fc solid 0.2rem;
+  border: none;
+}
+
+.contact .contact__wrapper .contact__right form textarea {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #eaeaea;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 1.5rem;
+  color: #0356fc;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .contact__wrapper .contact__right form textarea:focus {
+  outline: #0356fc solid 0.2rem;
+  border: none;
+}
+
+.contact .contact__wrapper .contact__right form button {
+  color: white;
+  border: #0356fc solid 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  min-width: 150px;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact .contact__wrapper .contact__right form button:hover {
+  background-color: #0356fc;
+  color: white;
+  border: #0356fc solid 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.contact .contact__wrapper .contact__right #statusContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 102%;
+  background: #57c257;
+  height: 102%;
+  opacity: 1;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact__wrapper .contact__right #statusContainer #status {
+  width: 90%;
+  color: #0356fc;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  -webkit-animation: fading 20s forwards;
+          animation: fading 20s forwards;
+}
+
+@media screen and (max-width: 920px) {
+  .contact .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact__wrapper .contact__left {
+    width: 100%;
+    margin: 0;
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .contact .contact__wrapper .contact__text {
+    font-size: 1.2rem;
+    font-weight: 1.2rem;
+  }
+  .contact .contact__wrapper .contact__right {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

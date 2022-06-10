@@ -159,40 +159,72 @@
         </section>
 
         <!-- Contact me -->
-        <section id="contact">
-            <section class="container">
-                <section class="contact__wrapper">
-                    <h3>Places to contact me</h3>
-                    <section class="contact__socials">
-                        <a class="social__icon"
-                            href="https://www.linkedin.com/in/marius-tanase/"
+        <section id="contact"
+            class="contact container">
+            <h2 class="contact__title">Places to contact me</h2>
+            <section class="contact__wrapper">
+                <!-- Contact me, left side with text, phone number, email, address -->
+                <section class="contact__left">
+
+
+                    <div class="contact__phone">
+                        <p class="contact__text"
+                            href=""
                             target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                        <a class="social__icon"
-                            href="https://github.com/mariustanase"
+                            rel="noopener noreferrer">Call me at<br>
+                        </p>
+                        <p class="contact__text"><i class="fa-solid fa-phone"></i> +40744444444</p>
+                    </div>
+                    <div class="contact__address">
+                        <p class="contact__text"
+                            href=""
                             target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                    </section>
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            Visit my address
+                        </p>
+                        <p>
+                            xx Street Name, <br>xx City, <br>xx Country, <br>xx Postcode
+                        </p>
+                    </div>
+
+                    <p class="contact__description contact__text">
+                        Got a project in mind?<br>
+                        Contact me to discuss it further and discover if I'm the right developer for you and your
+                        project.
+                    </p>
+
                     <a class="button button__contact"
                         href="mailto:marius_tanase@outlook.com"
                         target="_blank"
                         rel="noopener noreferrer">Email me <i class="fa-solid fa-envelope"></i></a>
+
+
                 </section>
-                <section class="form">
-                    <form action="">
+                <section class="contact__right">
+                    <form action="https://formspree.io/f/xoqrblyp"
+                        method="POST"
+                        id="contact-form">
                         <section class="form__group">
                             <label for="name"
-                                class="form__label">Name</label>
+                                class="form__label">Full Name</label>
                             <input type="text"
                                 id="name"
-                                class="form__input">
+                                name="name"
+                                class="form__input"
+                                placeholder="First and Last"
+                                required>
                         </section>
                         <section class="form__group">
                             <label for="email"
                                 class="form__label">Email</label>
                             <input type="email"
                                 id="email"
-                                class="form__input">
+                                name="email"
+                                class="form__input"
+                                placeholder="email@domain.com"
+                                required>
+
                         </section>
                         <section class="form__group">
                             <label for="message"
@@ -201,11 +233,59 @@
                                 id="message"
                                 cols="30"
                                 rows="10"
-                                class="form__input"></textarea>
+                                class="form__input"
+                                placeholder="Your mesage here..."
+                                required></textarea>
                         </section>
+                        <button class="button"
+                            type="submit">Send your message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div id="statusContainer"><h2 id="status">Email Sent!</h2></div>
                 </section>
             </section>
+        </section>
+        <section id="footer">
+            <section class="footer__wrapper">
+                <section class="footer__text">
+                    <p class="footer__text">
+                        Made with <i class="fa-solid fa-heart"></i> by Marius Tanase
+                    </p>
+                </section>
+
+
+                <section class="footer__icons">
+                    <a href="https://www.linkedin.com/in/marius-tanase-a8a8b817b/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href=""
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href=""
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-codepen"></i>
+                    </a>
+                    <a href=""
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href=""
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </section>
+            </section>
+        </section>
+
+
     </main>
+    <script src="./scripts/email.js" defer></script>
 </body>
 
 </html>
