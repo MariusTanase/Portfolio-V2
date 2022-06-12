@@ -10,7 +10,7 @@
     height: 3rem;
     width: 3rem;
 
-    border-radius: 1rem;
+    border-radius: 2rem;
 
     background-color: $text-color;
 
@@ -21,6 +21,8 @@
     transition: all 0.6s ease;
 
     opacity: 0;
+
+    border: none;
 
     &:hover{
         background-color: $first-color;

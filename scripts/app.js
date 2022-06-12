@@ -89,5 +89,15 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0 });
 });
 
+//Button with class jumpToProject and jumpToContact to scroll to the respective sections
+const jumpToProject = document.querySelector('#jumpToProject');
+const jumpToContact = document.querySelector('#jumpToContact');
 
+//after button is pressed jump to the respective section
+jumpToProject.addEventListener('click', () => {
+    window.scrollTo({ top: document.querySelector('#projects').offsetTop });
+});
 
+jumpToContact.addEventListener('click', () => {
+    window.scrollTo({ top: document.querySelector('#contact').offsetTop });
+});
