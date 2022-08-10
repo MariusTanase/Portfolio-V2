@@ -28,6 +28,11 @@
         background-color: $first-color;
         color: $text-color;
     }
+
+    &::active{
+        background-color: $first-color;
+        color: $text-color;
+    }
 }
 
 .show{
