@@ -1,0 +1,43 @@
+.hero__icons {
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 2rem;
+    gap: 3rem;
+
+    font-size: $h2-font-size;
+    transform: translateY(-10%);
+
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+        gap: 1rem;
+
+        bottom: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    a {
+        color: $text-color;
+        transition: all .5s ease;
+    
+        &:hover {
+            color: $first-color;
+        }
+    }
+}

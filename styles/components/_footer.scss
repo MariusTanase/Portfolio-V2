@@ -5,19 +5,7 @@
     font-size: 1.2rem;
     color: $text-color;
 
-    .footer__icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-
-        flex-wrap: wrap;
-        gap: 2rem;
-
-        a{
-            color: $text-color;
-        }
-    }
+    
 
     a{
         color: $text-color;
