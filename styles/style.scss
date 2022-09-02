@@ -1,13 +1,13 @@
-@import './_variables';
-@import './_background';
-@import './_base';
-
-@import "./components/_animations";
-@import "./components/_header";
-@import "./components/_hero";
-@import "./components/_projects";
-@import "./components/_contact";
-@import "./components/_footer";
-@import "./components/_burgermenu";
-@import "./components/_back-to-top";
-@import "./components/hero-icons"
+@import './variables',
+'./background',
+'./base',
+"./components/animations",
+"./components/header",
+"./components/hero",
+"./components/projects",
+"./components/contact",
+"./components/footer",
+"./components/burgermenu",
+"./components/back-to-top",
+"./components/hero-icons", 
+"./components/buttons";

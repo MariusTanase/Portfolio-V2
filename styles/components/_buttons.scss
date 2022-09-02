@@ -1,0 +1,32 @@
+.button {
+    background-color: $first-color;
+    color: $text-color;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: $padding-normal;
+    
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &-transparent{
+        background-color: transparent;
+        color: $text-color;
+
+        border: 2px solid $first-color;
+    
+        &:hover{
+            border: 2px solid $text-color;
+        }
+    }
+    
+    &:hover {
+        background-color: $text-color;
+        color: $first-color;
+    }
+}

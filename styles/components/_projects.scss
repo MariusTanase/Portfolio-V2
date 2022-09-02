@@ -59,14 +59,6 @@
         margin-bottom: 2rem;
     }
 
-
-    &__link {
-        font-size: $normal-font-size;
-        font-weight: 400;
-        margin-bottom: 2rem;
-        color: $first-color;
-    }
-
     &__info {
         font-size: $smaller-font-size;
         font-weight: 400;
@@ -78,38 +70,14 @@
         flex: 1 100%;
     }
 
-    &__links {
-
+    &__buttons {
         display: flex;
-        align-items: center;
+        gap: 3rem;
         justify-content: center;
-
-        flex-wrap: wrap;
-        width: 90%;
-
-        margin: 0 auto;
     }
 }
 
-.button {
-    // background-color: $first-color;
-    color: $text-color;
-    border: $first-color solid 1px;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    transition: all .2s ease-in-out;
-    min-width: 150px;
-    margin-right: 1rem;
-    margin-bottom: .5rem;
-}
 
-.button:hover {
-    background-color: $first-color;
-    color: $text-color;
-    border: $first-color solid 1px;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-}
 
 @media screen and (max-width: 1110px) {
     .projects {

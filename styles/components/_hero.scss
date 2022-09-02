@@ -51,43 +51,6 @@
     display: flex;
     gap: 3rem;
     margin-top: 2rem;
-
-    .button {
-        background-color: $first-color;
-        color: $text-color;
-        border: none;
-        border-radius: 5px;
-        padding: 1rem;
-
-        font-size: 1.25rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background-color: $text-color;
-            color: $first-color;
-        }
-    }
-
-
-    .button__contact {
-        background-color: transparent;
-        color: $first-color;
-        border: solid $first-color 1px;
-        border-radius: 5px;
-        padding: 1rem;
-
-        font-size: 1.25rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background-color: $first-color;
-            color: $text-color;
-        }
-    }
 }
 
 @media screen and (max-width: 1024px) {
